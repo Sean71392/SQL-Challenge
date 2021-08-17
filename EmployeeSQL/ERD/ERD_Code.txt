@@ -1,0 +1,36 @@
+\f0\fs24 \cf0 Titles\
+-\
+title_id FK >- Employees.emp_title_id varchar\
+title varchar\
+\
+Salaries\
+-\
+emp_no FK >- Dept_Manager.emp_no int\
+salary int\
+\
+Employees\
+-\
+emp_no FK >- Dept_Emp.emp_no int\
+emp_title_id int\
+birth_date date\
+first_name varchar\
+last_name varchar\
+sex varchar\
+hire_date date\
+\
+Dept_Manager\
+-\
+dept_no FK >- Departments.dept_no int\
+emp_no int\
+\
+Dept_Emp\
+-\
+emp_no FK >- Salaries.emp_no int\
+dept_no FK >- Departments.dept_no int\
+\
+Departments\
+-\
+dept_no int\
+dept_name int\
+\
+}
